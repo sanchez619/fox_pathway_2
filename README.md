@@ -1,7 +1,7 @@
-
-While doing the Code Institute program, my part-time work as a middle school instructor has proven less fruitful. 
+# Fox Pathway
+While doing the Code Institute program, my part-time work as a middle school instructor has proven less fruitful.
 The beliefs and techniques regarding learning do not work well in an environment which forces students to learn, especially if they have not themselves learned that the process of acquiring knowledge is nowhere near as difficult as they imagine it to be.
-While many teachers develop the habit of blaming the inability of students, I do not want to go down the same path. I believe in the principle which I have laid out on the Memory Gates website. 
+While many teachers develop the habit of blaming the inability of students, I do not want to go down the same path. I believe in the principle which I have laid out on the Memory Gates website.
 Thus, it seems only necessary to follow up directly on the website. This document will outline the follow-up website of Memory Gate – Fox Pathway.
 
 General Overview
