@@ -1,7 +1,31 @@
-:root{
+/*Global styling choices*/
+:root {
     background-color: aqua;
     font-size: 62,5%;
+}
+
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+head  {
+    height: 5vh;
+}
+
+#header {
+    height: 5vh;
+    background-color: antiquewhite;
+    top: 0;
+}
+
+footer {
+    height: 5vh;
+}
+
+#footer {
+    height: 5vh;
+    background-color: antiquewhite;
+    bottom: 0;
 }
