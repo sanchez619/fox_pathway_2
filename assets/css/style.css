@@ -3,7 +3,7 @@
 
 /*Global styling choices*/
 :root {
-    background-color: D6FFB7;
+    background-color: #D6FFB7;
     font-size: 10px; /*changes general pixel height*/
 }
 
@@ -45,6 +45,23 @@ head  {
 section {
     height: 88vh;
 }
+/* Content Div Styling */
+#centerDiv  {
+    height: 88vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.content  {
+    height: 26vh;
+    background-color: #8BFF33;
+}
+
 
 footer {
     height: 6vh;
