@@ -3,7 +3,7 @@
     margin-bottom: 0.5rem;
     width: 100%;
     font-size: 1.8rem;
-    border: 0.1rem solid rgb(25, 40, 47, 0.25)
+    border: 0.1rem solid rgba(25, 40, 47, 0.25)
 }
 
 .choiceLetter{
@@ -16,4 +16,16 @@
     padding: 1.5rem;
     background-color:#FFFFFF;
     color: #794E16;
+}
+
+
+/*Styling choices for Laptop and higher */
+@media screen and (min-width: 768px)  {
+    /*Create highlight effect during hover*/
+    .choiceBox:hover  {
+        cursor: pointer;
+        box-shadow: 0 0.4rem 1.4rem 0 rgba(25, 40, 47, 0.25);
+        transform: translateY(-0.1rem);
+        transition: transform 150ms;
+    }
 }

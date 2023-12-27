@@ -25,7 +25,7 @@ h1  {
 }
 
 h2{
-    font-size: 4.2rem;
+    font-size: 4.2rem; /*remember to cascade hsize downwards*/
 }
 
 h3 {
