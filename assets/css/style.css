@@ -10,22 +10,27 @@
     padding: 0;
 }
 
+
 head  {
-    height: 5vh;
+    height: 6vh;
 }
 
 #header {
-    height: 5vh;
+    height: 6vh;
     background-color: antiquewhite;
     top: 0;
 }
 
+section {
+    height: 88vh;
+}
+
 footer {
-    height: 5vh;
+    height: 6vh;
 }
 
 #footer {
-    height: 5vh;
+    height: 6vh;
     background-color: antiquewhite;
     bottom: 0;
 }
