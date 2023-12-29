@@ -53,6 +53,14 @@ exchangeQuestion = () => {
     acceptedAnswers = true;
 };
 
-
+choices.forEach((choice) => {
+    choice.addEventListener("click", e => {
+        if (!acceptedAnswers) return;
+        acceptedAnswers = false;
+        let selectedContent = e.target;
+        let selectedNumber = selectedContent.dataset['number'];
+        exchangeQuestion();
+    });
+});
 
 launchGame()
