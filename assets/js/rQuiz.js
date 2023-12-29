@@ -1,2 +1,3 @@
 /*Global Constants - mainly question text*/
-const = document.getElementsByClassTag("choiceContent")
+const choice = document.getElementsByClassName("choiceContent")
+
