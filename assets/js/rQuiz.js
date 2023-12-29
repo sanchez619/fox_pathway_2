@@ -1,6 +1,6 @@
 /*Global Constants - mainly question text*/
-const choice = document.getElementsByClassName("choiceContent")
-const quizLenght = 3;
+const choices = Array.from(document.getElementsByClassName("choiceContent"));
+const quizLength = 3;
 
 /*Global Variables - general quiz features*/
 let currentQuestion = {};
@@ -41,4 +41,18 @@ launchGame = () => {
     exchangeQuestion();
 };
 
-launchGame();
+exchangeQuestion = () => {
+    questionCount++;
+    let questionIndex = Math.floor(Math.random() * questionsLeft.length);
+    currentQuestion = questionsLeft[questionIndex];
+    choices.forEach((choice) => {
+        const number = choice.dataset['number'];
+        choice.innerText = currentQuestion['choice' + number];
+    });
+    questionsLeft.splice(questionIndex, 1);
+    acceptedAnswers = true;
+};
+
+
+
+launchGame()
