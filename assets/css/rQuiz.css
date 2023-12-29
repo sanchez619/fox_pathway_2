@@ -19,14 +19,13 @@
 }
 
 /* Classes for (In)Correct Answers */
-#correct  {
+.correct  {
     background-color: green;
 }
 
-#incorrect {
+.incorrect {
     background-color: red;
 }
-
 
 /*Styling choices for Laptop and higher */
 @media screen and (min-width: 768px)  {
