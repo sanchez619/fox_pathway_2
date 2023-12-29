@@ -9,6 +9,8 @@ let score = 0;
 let questionCount = 0;
 let questionsLeft = [];
 
+/*Array of Radicals and their properties */
+/*Array of possible questions */
 let questions = [{
         choice1: "user input",
         choice2: "random",
@@ -33,6 +35,7 @@ let questions = [{
     },
 ];
 
+/*function for starting game*/
 launchGame = () => {
     questionCount = 0;
     score = 0;
@@ -41,6 +44,7 @@ launchGame = () => {
     exchangeQuestion();
 };
 
+/*function for replacing questions*/
 exchangeQuestion = () => {
     questionCount++;
     let questionIndex = Math.floor(Math.random() * questionsLeft.length);
@@ -53,6 +57,7 @@ exchangeQuestion = () => {
     acceptedAnswers = true;
 };
 
+/*Event Listener for selected choice*/
 choices.forEach((choice) => {
     choice.addEventListener("click", e => {
         if (!acceptedAnswers) return;
@@ -63,4 +68,5 @@ choices.forEach((choice) => {
     });
 });
 
+/*Starts Game*/
 launchGame()
