@@ -18,6 +18,15 @@
     color: #794E16;
 }
 
+/* Classes for (In)Correct Answers */
+#correct  {
+    background-color: green;
+}
+
+#incorrect {
+    background-color: red;
+}
+
 
 /*Styling choices for Laptop and higher */
 @media screen and (min-width: 768px)  {
