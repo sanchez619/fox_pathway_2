@@ -81,13 +81,19 @@ choices.forEach(choice => {
             selectedContent.parentElement.classList.remove(applyClass);
             exchangeQuestion();
         }, 1000);
+        updateQuestionCount();
     });
 });
 
 function updateScore() {
-    let oldScore = parseInt(document.getElementById("score").innerText);
-    document.getElementById("score").innerText = ++oldScore;
+    let currentScore = parseInt(document.getElementById("score").innerText);
+    document.getElementById("score").innerText = ++currentScore;
 };
+
+function updateQuestionCount() {
+    let currentQuestionNumber = parseInt(document.getElementById("questionNumber").innerText);
+    document.getElementById("questionNumber").innerText = ++currentQuestionNumber;
+}
 
 /*Starts Game*/
 launchGame();
