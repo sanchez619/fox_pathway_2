@@ -1,8 +1,8 @@
 /*Global Constants - mainly question text*/
 const choices = Array.from(document.getElementsByClassName("choiceContent"));
 const quizLength = 3;
-const questionCountValue = document.getElementById("questionNumber")
-const scoreValue = document.getElementById("score")
+const questionCountValue = document.getElementById("questionNumber");
+const scoreValue = document.getElementById("score");
 
 /*Global Variables - general quiz features*/
 let currentQuestion = {};
@@ -43,12 +43,11 @@ let questions = [{
     score = 0;
     questionsLeft = [...questions];
     exchangeQuestion();
-}
+ }
 
 /*function for replacing questions*/
 function exchangeQuestion() {
     questionCount++;
-    
     let questionIndex = Math.floor(Math.random() * questionsLeft.length);
     currentQuestion = questionsLeft[questionIndex];
     choices.forEach(choice => {
@@ -58,6 +57,7 @@ function exchangeQuestion() {
     questionsLeft.splice(questionIndex, 1);
     acceptedAnswers = true;
 }
+
 
 /* */
 choices.forEach(choice => {
@@ -72,7 +72,9 @@ choices.forEach(choice => {
         if (selectedAnswer == currentQuestion.answer) {
             applyClass = "correct";
         }
-        console.log(applyClass);
+        if (applyClass === "correct") {
+            updateScore();
+        }
         selectedContent.parentElement.classList.add(applyClass);
 
         setTimeout(() => {
@@ -81,6 +83,11 @@ choices.forEach(choice => {
         }, 1000);
     });
 });
+
+function updateScore() {
+    let oldScore = parseInt(document.getElementById("score").innerText);
+    document.getElementById("score").innerText = ++oldScore;
+};
 
 /*Starts Game*/
 launchGame();
