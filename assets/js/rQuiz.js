@@ -1,6 +1,8 @@
 /*Global Constants - mainly question text*/
 const choices = Array.from(document.getElementsByClassName("choiceContent"));
 const quizLength = 3;
+const questionCountValue = document.getElementById("questionNumber")
+const scoreValue = document.getElementById("score")
 
 /*Global Variables - general quiz features*/
 let currentQuestion = {};
@@ -46,6 +48,7 @@ let questions = [{
 /*function for replacing questions*/
 function exchangeQuestion() {
     questionCount++;
+    
     let questionIndex = Math.floor(Math.random() * questionsLeft.length);
     currentQuestion = questionsLeft[questionIndex];
     choices.forEach(choice => {
