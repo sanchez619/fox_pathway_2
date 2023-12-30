@@ -36,15 +36,15 @@ let questions = [{
 ];
 
 /*function for starting game*/
-launchGame = () => {
+ function launchGame() {
     questionCount = 0;
     score = 0;
     questionsLeft = [...questions];
     exchangeQuestion();
-};
+}
 
 /*function for replacing questions*/
-exchangeQuestion = () => {
+function exchangeQuestion() {
     questionCount++;
     let questionIndex = Math.floor(Math.random() * questionsLeft.length);
     currentQuestion = questionsLeft[questionIndex];
@@ -54,7 +54,7 @@ exchangeQuestion = () => {
     });
     questionsLeft.splice(questionIndex, 1);
     acceptedAnswers = true;
-};
+}
 
 /* */
 choices.forEach(choice => {
@@ -68,8 +68,8 @@ choices.forEach(choice => {
         let applyClass = "incorrect";
         if (selectedAnswer == currentQuestion.answer) {
             applyClass = "correct";
-        };
-        console.log(applyClass)
+        }
+        console.log(applyClass);
         selectedContent.parentElement.classList.add(applyClass);
 
         setTimeout(() => {
