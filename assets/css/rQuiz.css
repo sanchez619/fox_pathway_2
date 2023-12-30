@@ -18,6 +18,11 @@
     color: #794E16;
 }
 
+.scoreArea {
+    display: flex;
+    justify-items: space-around;
+}
+
 /* Classes for (In)Correct Answers */
 .correct  {
     background-color: green;
