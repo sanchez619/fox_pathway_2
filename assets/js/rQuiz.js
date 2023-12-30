@@ -47,6 +47,10 @@ let questions = [{
 
 /*function for replacing questions*/
 function exchangeQuestion() {
+    if questionsLeft.length === 0 || questionCount > quizLength  {
+        /*automatically connect to result page*/
+        return window.location.assign("/result.html");
+    }
     questionCount++;
     let questionIndex = Math.floor(Math.random() * questionsLeft.length);
     currentQuestion = questionsLeft[questionIndex];
