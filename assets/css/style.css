@@ -58,6 +58,12 @@ section {
     margin: 0 auto;
 }
 
+#fox {
+    background-image: url(../images/background_images/fox.jpg);
+    height: 512px;
+    width: 768px;
+}
+
 .content  {
     width: 100%;
     background-color: #FFFFFF;
