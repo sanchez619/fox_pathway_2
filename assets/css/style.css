@@ -68,6 +68,25 @@ section {
     border: 0.5rem solid #19282F;
 }
 
+#radicalImage {
+    background-image: url(../images/background_images/radical_image.jpg);
+    height: 26rem;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 0.5rem solid #19282F;
+}
+
+#kanjiImage {
+    background-image: url(../images/background_images/kanji_image.jpg);
+    height: 26rem;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 0.5rem solid #19282F;
+}
 .content  {
     width: 100%;
     background-color: #FFFFFF;
