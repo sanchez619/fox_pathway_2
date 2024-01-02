@@ -36,6 +36,11 @@ head  {
     height: 6vh;
 }
 
+/*Class for hiding elements*/
+.hide  {
+    display: none;
+}
+
 #header {
     height: 6vh;
     background-color: #794E16;
