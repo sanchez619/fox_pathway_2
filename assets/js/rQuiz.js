@@ -1,4 +1,5 @@
 /*Global Constants - mainly question text*/
+const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("choiceContent"));
 const quizLength = 3;
 const questionCountValue = document.getElementById("questionNumber");
@@ -54,6 +55,7 @@ function exchangeQuestion() {
     questionCount++;
     let questionIndex = Math.floor(Math.random() * questionsLeft.length);
     currentQuestion = questionsLeft[questionIndex];
+    currentQuestion.innerText= currentQuestion.question;
     choices.forEach(choice => {
         const number = choice.dataset['number'];
         choice.innerText = currentQuestion['choice' + number];
