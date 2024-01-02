@@ -1,7 +1,7 @@
 /*Global Constants - mainly question text*/
 const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("choiceContent"));
-const quizLength = 3;
+const quizLength = 10;
 const questionCountValue = document.getElementById("questionNumber");
 const scoreValue = document.getElementById("score");
 
