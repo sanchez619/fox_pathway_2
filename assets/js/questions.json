@@ -16,15 +16,15 @@
         "answer": 3
     },
     {
-        "question": "What is your association for the radical　木?",
+        "question": "What is your association for 木?",
         "choice1": "mountain",
         "choice2": "sail",
         "choice3": "wheat",
         "choice4": "user input",
         "answer": 4
     }
-    {
-        "question": "What is your association for the radical　田?",
+    ,{
+        "question": "What is your association for 田?",
         "choice1": "earth",
         "choice2": "user input",
         "choice3": "target",
@@ -32,7 +32,7 @@
         "answer": 2
     },
     {
-        "question": "What is your association for the radical　士?",
+        "question": "What is your association for 士?",
         "choice1": "user input",
         "choice2": "cross",
         "choice3": "forest",
@@ -40,15 +40,15 @@
         "answer": 1
     },
     {
-        "question": "What is your association for the radical　女?",
+        "question": "What is your association for 女?",
         "choice1": "star",
         "choice2": "knee",
         "choice3": "mother",
         "choice4": "user input",
         "answer": 4
     }
-    {
-        "question": "What is your association for the radical　目?",
+    ,{
+        "question": "What is your association for 目?",
         "choice1": "book",
         "choice2": "cupboard",
         "choice3": "user input",
@@ -56,23 +56,23 @@
         "answer": 3
     },
     {
-        "question": "What is your association for the radical　小冠?",
+        "question": "What is your association for 小冠?",
         "choice1": "heaven",
         "choice2": "reign",
         "choice3": "user input",
         "choice4": "god",
         "answer": 3
-    },
-    {
-        "question": "What is your association for the radical　子?",
+    }
+    ,{
+        "question": "What is your association for 子?",
         "choice1": "snake",
         "choice2": "user input",
         "choice3": "myself",
         "choice4": "like",
         "answer": 2
     }
-    {
-        "question": "What is your association for the radical 力?",
+    ,{
+        "question": "What is your association for 力?",
         "choice1": "man",
         "choice2": "shoe",
         "choice3": "axe",
