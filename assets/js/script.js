@@ -3,14 +3,14 @@ const welcomeArea = document.getElementById('welcomeArea');
 const nameRequest = document.getElementById('nameRequest');
 
 //Goal: Get name input of user
-let username = document.getElementById('nameField')
+let username
 
-nameForm.addEventListener('submit', (event) => {
+nameForm.addEventListener('onclick', (event) => {
     event.preventDefault();
     username = event.target[0].value;
     nameRequest.classList.add('hide');
     welcomeArea.classList.remove('hide');
-    document.document.getElementById('welcomeArea').innerHTML = "Welcome, " + username + "!" + "<br>" + "Click on the middle button to get to the Radical Quiz!" + "<br>" + "Click on the middle button to get to the Kanji Quiz!"; 
+    document.getElementById('welcomeArea').innerHTML = "Welcome, " + username + "!" + "<br>" + "Click on the middle button to get to the Radical Quiz!" + "<br>" + "Click on the middle button to get to the Kanji Quiz!"; 
 });
 //Goal: Make fox call the user by name
 
