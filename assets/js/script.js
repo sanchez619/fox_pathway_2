@@ -5,7 +5,7 @@ const nameRequest = document.getElementById('nameRequest');
 //Goal: Get name input of user
 let username
 
-nameForm.addEventListener('onclick', (event) => {
+nameRequest.addEventListener('submit', (event) => {
     event.preventDefault();
     username = event.target[0].value;
     nameRequest.classList.add('hide');
