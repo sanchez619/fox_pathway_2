@@ -12,31 +12,18 @@ let score = 0;
 let questionCount = 0;
 let questionsLeft = [];
 
-/*Array of Radicals and their properties */
-/*Array of possible questions */
-let questions = [{
-    choice1: "user input",
-    choice2: "random",
-    choice3: "random",
-    choice4: "random",
-    answer: 1,
-},
-{
+let questions = []
 
-    choice1: "random",
-    choice2: "random",
-    choice3: "user input",
-    choice4: "random",
-    answer: 3,
-},
-{
-    choice1: "random",
-    choice2: "random",
-    choice3: "random",
-    choice4: "user input",
-    answer: 4,
-},
-];
+fetch('assets/js/questions.json').then((res) =>  {
+        return res.json();
+    }).then((loadedQuestions) => {
+        questions = loadedQuestions;
+        console.log("loadedQuestions");
+        launchGame();
+    })
+    .catch((err) => {
+        console.error(err);
+    })
 
 /*function for starting game*/
  function launchGame() {
@@ -55,7 +42,7 @@ function exchangeQuestion() {
     questionCount++;
     let questionIndex = Math.floor(Math.random() * questionsLeft.length);
     currentQuestion = questionsLeft[questionIndex];
-    currentQuestion.innerText= currentQuestion.question;
+    question.innerText= currentQuestion.question;
     choices.forEach(choice => {
         const number = choice.dataset['number'];
         choice.innerText = currentQuestion['choice' + number];
@@ -102,4 +89,3 @@ function updateQuestionCount() {
 }
 
 /*Starts Game*/
-launchGame();
