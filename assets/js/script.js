@@ -1,3 +1,12 @@
+/*index.html Global Constants */
+const welcomeArea = document.getElementById('welcomeArea');
+const nameForm = document.getElementById('nameField');
+
+let username
+
+
+
+
 //Goal: Get name input of user
 
 //Goal: Make fox call the user by name
