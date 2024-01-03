@@ -48,12 +48,15 @@ associationForm.addEventListener('submit', (event) => {
 });
 
 /*function for starting game*/
- function launchGame() {
+function launchGame() {
     questionCount = 0;
     score = 0;
-    questionsLeft = [...questions];
-    exchangeQuestion();
- }
+    startAssociations();
+}
+
+function startAssociations() {
+    associationHeader.innerText = questions[questionCount].question;
+}
 
 /*function for replacing questions*/
 function exchangeQuestion() {
