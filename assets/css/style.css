@@ -33,11 +33,11 @@ h3 {
 }
 
 
-
 #header {
     height: 6vh;
     background-color: #794E16;
     top: 0;
+    text-decoration: none;
 }
 
 section {
@@ -55,10 +55,24 @@ section {
     max-width: 80rem;
     margin: 0 auto;
 }
+
+.menu  {
+    border: solid 0.5rem #19282F;
+}
+
+#decoration {
+    background-color: #D6FFB7;
+    height: 10rem;
+    width: 100%
+}
+
+#quizLink  {
+    width: 100%;
+}
+
 /*Background Images */
 #foxImage {
     background-image: url(../images/background_images/fox.jpg);
-    width: 50%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -66,15 +80,6 @@ section {
 
 #radicalImage {
     background-image: url(../images/background_images/radical_image.jpg);
-    width: 50%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-#kanjiImage {
-    background-image: url(../images/background_images/kanji_image.jpg);
-    width: 50%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -86,7 +91,6 @@ section {
     background-color: #FFFFFF;
     display: flex;
     justify-content: center;
-    margin: 0 0 1rem 0;
 }
 
 /*Class for hiding elements*/

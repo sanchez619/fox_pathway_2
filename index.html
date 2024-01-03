@@ -16,7 +16,7 @@
     <section>
         <div id="centerDiv">
             <!--Welcome Div. Will accept the user's input as name and change to a welcome message. -->
-            <div class="content">
+            <div class="content menu">
                 <div id="foxImage" class="content"></div>
                     <div id="foxText" class="content">
                     <div id="nameRequest">
@@ -29,27 +29,19 @@
                             <button type="submit">Submit</button>
                         </form>
                     </div>
-                    <div id="welcomeArea"></div>
+                    <div id="welcomeArea" class="content hide"></div>
                 </div>
             </div>
+            <div id="decoration"></div>
             <!--A link to Radical Quiz in form of a decorative div. -->
-            <div id="RQuizLink" class="content">
-                <a href="radical_quiz.html">    
+            <a href="radical_quiz.html" id="quizLink" class="menu">  
+                <div id="rQuizLink" class="content">  
                 <div id="radicalImage" class="content"></div>
-                    <div class="content">
+                <div class="content">
                         <h3>Here are the radicals!</h3>           
-                    </div>
-                </a>
-            </div>
-            <!--A link to Radical Quiz in form of a decorative div. -->
-            <div id="KQuizLink" class="content">
-                <a href="kanji_quiz.html">
-                    <div id="kanjiImage" class="content"></div>
-                    <div class="content">
-                    <h3>Here are the kanji!</h3>
-                    </div>
-                </a>
-            </div>
+                </div>
+                </div>
+            </a>
         </div>
     </section>
     <footer>
