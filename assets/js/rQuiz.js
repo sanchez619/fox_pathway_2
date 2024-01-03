@@ -115,4 +115,9 @@ function updateQuestionCount() {
     document.getElementById("questionNumber").innerText = ++currentQuestionNumber;
 }
 
-/*Starts Game*/
+function shuffleArray(array) {
+    for (let remainingQuestions = array.length - 1; remainingQuestions > 0; remainingQuestions--) {
+        const grabbedQuestions = Math.floor(Math.random() * (remainingQuestions + 1));
+        [array[remainingArray], array[grabbedQuestions]] = [array[grabbedQuestions], array[remainingQuestions]]; // Swap elements
+    }
+}
