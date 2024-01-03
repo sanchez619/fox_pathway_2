@@ -29,6 +29,24 @@ fetch('assets/js/questions.json').then((res) =>  {
         console.error(err);
     })
 
+associationForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const userInput = event.target[0].value.toLowerCase();
+    questions[questionCount].choice1 = userInput;
+    questions[questionCount].answer = userInput;
+    event.target.reset();
+    questionCount++;
+    if (questionCount === questions.length) {
+        questionArea.classList.add('hide');
+        quizArea.classList.remove('hide');
+        questionCount = 0;
+        questionsLeft = [...questions];
+        exchangeQuestion();
+        return;
+    }
+    startAssociations();
+});
+
 /*function for starting game*/
  function launchGame() {
     questionCount = 0;
