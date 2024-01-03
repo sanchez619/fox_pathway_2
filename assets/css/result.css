@@ -1,7 +1,16 @@
+#scoreBox  {
+    background-color: #fff;
+    text-align: center;
+    width: 280px;
+    margin-bottom: 20px;
+    border: solid 2px #19282F;
+}
+
 .returnButton  {
     border: solid 2px #19282F;
     font-family: 'Archivo', sans-serif;
-    width: 100px;
+    font-size: 20px;
+    width: 234px;
     color: #F7B226;
     background-color: #19282F;
     display: flex;
