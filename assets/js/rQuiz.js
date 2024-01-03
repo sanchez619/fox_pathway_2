@@ -92,7 +92,7 @@ function exchangeQuestion() {
     acceptedAnswers = true;
     }
 
-/*Add correct and incorrect classes to questions choices */
+/*Add correct and incorrect classes to user choice */
 choices.forEach(choice => {
     /*Event Listener for selected choice*/
     choice.addEventListener("click", e => {
