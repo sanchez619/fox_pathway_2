@@ -1,0 +1,9 @@
+.returnButton  {
+    border: solid 2px #19282F;
+    font-family: 'Archivo', sans-serif;
+    width: 100px;
+    color: #F7B226;
+    background-color: #19282F;
+    display: flex;
+    justify-content: center;
+}
