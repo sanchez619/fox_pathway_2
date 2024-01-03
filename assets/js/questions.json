@@ -1,6 +1,6 @@
 [
     {
-        "question": "What is your association for the radical 日?",
+        "question": "What is your association for 'day'?",
         "choice1": "user input",
         "choice2": "cupboard",
         "choice3": "box",
@@ -8,25 +8,104 @@
         "answer": 1
     },
     {
-        "question": "What is your association for the radical にんべん?",
-        "choice1": "stand",
+        "question": "What is your association for 'human'?",
+        "choice1": "user input",
         "choice2": "pin",
-        "choice3": "user input",
+        "choice3": "stand",
         "choice4": "needle",
         "answer": 3
     },
     {
-        "question": "What is your association for 木?",
-        "choice1": "mountain",
+        "question": "What is your association for 'tree'?",
+        "choice1": "user input",
         "choice2": "sail",
         "choice3": "wheat",
-        "choice4": "user input",
+        "choice4": "pole",
         "answer": 4
     }
     ,{
+        "question": "What is your association for 'rice field'?",
+        "choice1": "user input",
+        "choice2": "earth",
+        "choice3": "target",
+        "choice4": "dice",
+        "answer": 2
+    },
+    {
+        "question": "What is your association for 'samurai'?",
+        "choice1": "user input",
+        "choice2": "cross",
+        "choice3": "forest",
+        "choice4": "window",
+        "answer": 1
+    },
+    {
+        "question": "What is your association for 'woman'?",
+        "choice1": "user input",
+        "choice2": "knee",
+        "choice3": "mother",
+        "choice4": "star",
+        "answer": 4
+    }
+    ,{
+        "question": "What is your association for 'eye'?",
+        "choice1": "book",
+        "choice2": "cupboard",
+        "choice3": "book",
+        "choice4": "fence",
+        "answer": 3
+    },
+    {
+        "question": "What is your association for 'crown'",
+        "choice1": "user input",
+        "choice2": "reign",
+        "choice3": "heaven",
+        "choice4": "god",
+        "answer": 3
+    }
+    ,{
+        "question": "What is your association for 'child'?",
+        "choice1": "user input",
+        "choice2": "snake",
+        "choice3": "myself",
+        "choice4": "like",
+        "answer": 2
+    }
+    ,{
+        "question": "What is your association for 'power'?",
+        "choice1": "user input",
+        "choice2": "shoe",
+        "choice3": "axe",
+        "choice4": "man",
+        "answer": 4
+    },{
+        "question": "What is your association for 'fire'?",
+        "choice1": "user input",
+        "choice2": "cupboard",
+        "choice3": "box",
+        "choice4": "rock",
+        "answer": 1
+    },
+    {
+        "question": "What is your association for 'katana(sword)'?",
+        "choice1": "user input",
+        "choice2": "pin",
+        "choice3": "stand",
+        "choice4": "needle",
+        "answer": 3
+    },
+    {
+        "question": "What is your association for 'one'?",
+        "choice1": "user input",
+        "choice2": "sail",
+        "choice3": "wheat",
+        "choice4": "pole",
+        "answer": 4
+    },
+    {
         "question": "What is your association for 田?",
-        "choice1": "earth",
-        "choice2": "user input",
+        "choice1": "user input",
+        "choice2": "earth",
         "choice3": "target",
         "choice4": "dice",
         "answer": 2
@@ -41,42 +120,122 @@
     },
     {
         "question": "What is your association for 女?",
-        "choice1": "star",
+        "choice1": "user input",
         "choice2": "knee",
         "choice3": "mother",
-        "choice4": "user input",
+        "choice4": "star",
         "answer": 4
-    }
-    ,{
+    },
+    {
         "question": "What is your association for 目?",
         "choice1": "book",
         "choice2": "cupboard",
-        "choice3": "user input",
+        "choice3": "book",
         "choice4": "fence",
         "answer": 3
     },
     {
         "question": "What is your association for 小冠?",
-        "choice1": "heaven",
+        "choice1": "user input",
         "choice2": "reign",
-        "choice3": "user input",
+        "choice3": "heaven",
         "choice4": "god",
         "answer": 3
-    }
-    ,{
+    },
+    {
         "question": "What is your association for 子?",
-        "choice1": "snake",
-        "choice2": "user input",
+        "choice1": "user input",
+        "choice2": "snake",
         "choice3": "myself",
         "choice4": "like",
         "answer": 2
-    }
-    ,{
+    },
+    {
         "question": "What is your association for 力?",
-        "choice1": "man",
+        "choice1": "user input",
         "choice2": "shoe",
         "choice3": "axe",
-        "choice4": "user input",
+        "choice4": "man",
+        "answer": 4
+    },{
+        "question": "What is your association for the radical 日?",
+        "choice1": "user input",
+        "choice2": "cupboard",
+        "choice3": "box",
+        "choice4": "rock",
+        "answer": 1
+    },
+    {
+        "question": "What is your association for the radical にんべん?",
+        "choice1": "user input",
+        "choice2": "pin",
+        "choice3": "stand",
+        "choice4": "needle",
+        "answer": 3
+    },
+    {
+        "question": "What is your association for 木?",
+        "choice1": "user input",
+        "choice2": "sail",
+        "choice3": "wheat",
+        "choice4": "pole",
+        "answer": 4
+    },
+    {
+        "question": "What is your association for 田?",
+        "choice1": "user input",
+        "choice2": "earth",
+        "choice3": "target",
+        "choice4": "dice",
+        "answer": 2
+    },
+    {
+        "question": "What is your association for 士?",
+        "choice1": "user input",
+        "choice2": "cross",
+        "choice3": "forest",
+        "choice4": "window",
+        "answer": 1
+    },
+    {
+        "question": "What is your association for 女?",
+        "choice1": "user input",
+        "choice2": "knee",
+        "choice3": "mother",
+        "choice4": "star",
+        "answer": 4
+    },
+    {
+        "question": "What is your association for 目?",
+        "choice1": "book",
+        "choice2": "cupboard",
+        "choice3": "book",
+        "choice4": "fence",
+        "answer": 3
+    },
+    {
+        "question": "What is your association for 小冠?",
+        "choice1": "user input",
+        "choice2": "reign",
+        "choice3": "heaven",
+        "choice4": "god",
+        "answer": 3
+    },
+    {
+        "question": "What is your association for 子?",
+        "choice1": "user input",
+        "choice2": "snake",
+        "choice3": "myself",
+        "choice4": "like",
+        "answer": 2
+    },
+    {
+        "question": "What is your association for 力?",
+        "choice1": "user input",
+        "choice2": "shoe",
+        "choice3": "axe",
+        "choice4": "man",
         "answer": 4
     }
+
 ]

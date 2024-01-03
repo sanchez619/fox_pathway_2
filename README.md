@@ -35,6 +35,7 @@ For learners already versed in Hiragana and Katakana, future version would inclu
 In an ideal version, an AI generator could immediately generate a picture for the user’s association and save it in an array together with each input from the user.
 Sources:
 Once more Joshua Foer’s Memory Superpowers serves as basis for the associative and mnemonic learning principles and techniques.
+By suggestion
 As reference to how associative learning of Japanese characters may look, the German website Miruko.de has published two articles about learning the two other Japanese writing systems, one for Katakana and Hiragana respectively.
 All pictures this time will be AI generated to better suit the style of the website. The Generator used is perchance.org.
 The pictures in svg-file-format are provided by “Kanji Alive”, which are generous to provide an open-file Github repository for fonts, characters etc for open access.
