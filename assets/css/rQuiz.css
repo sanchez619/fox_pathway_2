@@ -40,6 +40,9 @@
     background-color: red;
 }
 
+.hide {
+    display: none;
+}
 /*Styling choices for Laptop and higher */
 @media screen and (min-width: 768px)  {
     /*Create highlight effect during hover*/
