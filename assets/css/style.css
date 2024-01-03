@@ -14,6 +14,10 @@
     color: #19282F;
 }
 
+a  {
+    text-decoration: none;
+}
+
 /*Headline styling*/
 h1, h2, h3, h4  {
     font-family: 'Courgette', Helvetica, sans-serif;
@@ -31,7 +35,6 @@ h2{
 h3 {
     font-size: 2.8rem;
 }
-
 
 #header {
     height: 6vh;
@@ -70,6 +73,10 @@ section {
     width: 100%;
 }
 
+#linkText  {
+    display: flex;
+    align-items: center;    
+}
 /*Background Images */
 #foxImage {
     background-image: url(../images/background_images/fox.jpg);
@@ -89,6 +96,8 @@ section {
     width: 100%;
     height: 26vh;
     background-color: #FFFFFF;
+    font-family: 'Courgette', sans-serif;
+    font-size: 1.7rem;
     display: flex;
     justify-content: center;
 }
