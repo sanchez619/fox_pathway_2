@@ -15,9 +15,9 @@ let acceptedAnswers = false;
 let score = 0;
 let questionCount = 0;
 let questionsLeft = [];
-
 let questions = []
 
+/*fetch function to grab questions from json file */
 fetch('assets/js/questions.json').then((res) =>  {
         return res.json();
     }).then((loadedQuestions) => {
@@ -29,6 +29,7 @@ fetch('assets/js/questions.json').then((res) =>  {
         console.error(err);
     })
 
+/*Listener grabs user input and changes it to first answer in question */
 associationForm.addEventListener('submit', (event) => {
     event.preventDefault();
     const userInput = event.target[0].value.toLowerCase();
@@ -36,6 +37,7 @@ associationForm.addEventListener('submit', (event) => {
     questions[questionCount].answer = userInput;
     event.target.reset();
     questionCount++;
+    /*changes visible items from form to quiz*/
     if (questionCount === questions.length) {
         questionArea.classList.add('hide');
         quizArea.classList.remove('hide');
@@ -47,7 +49,7 @@ associationForm.addEventListener('submit', (event) => {
     startAssociations();
 });
 
-/*function for starting game*/
+/*function for starting game - at associations*/
 function launchGame() {
     questionCount = 0;
     score = 0;
