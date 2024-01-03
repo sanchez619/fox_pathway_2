@@ -1,9 +1,13 @@
 /*Global Constants - mainly question text*/
-const question = document.getElementById("question");
-const choices = Array.from(document.getElementsByClassName("choiceContent"));
+const question = document.getElementById('question');
+const choices = Array.from(document.getElementsByClassName('choiceContent'));
 const quizLength = 10;
-const questionCountValue = document.getElementById("questionNumber");
-const scoreValue = document.getElementById("score");
+const questionCountValue = document.getElementById('questionNumber');
+const associationHeader = document.getElementById('association');
+const associationForm = document.getElementById('associationForm');
+const questionArea = document.getElementById('questionArea');
+const scoreValue = document.getElementById('score');
+const quizArea = document.getElementById('quizArea');
 
 /*Global Variables - general quiz features*/
 let currentQuestion = {};
