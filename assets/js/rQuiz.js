@@ -62,22 +62,35 @@ function startAssociations() {
 
 /*function for replacing questions*/
 function exchangeQuestion() {
-    if (questionsLeft.length === 0 || questionCount > quizLength)  {
+    if (questionsLeft.length === 0 || questionCount > quizLength) {
         /*automatically connect to result page*/
-        return window.location.assign("/result.html");
+        return window.location.assign('/result.html');
     }
     questionCount++;
     let questionIndex = Math.floor(Math.random() * questionsLeft.length);
     currentQuestion = questionsLeft[questionIndex];
-    question.innerText= currentQuestion.question;
-    choices.forEach(choice => {
+    let choicesArray = [
+        currentQuestion.choice1,
+        currentQuestion.choice2,
+        currentQuestion.choice3,
+        currentQuestion.choice4,
+    ];
+    shuffleArray(choicesArray);
+
+// Assign the shuffled choices back to the currentQuestion object
+    for (let i = 0; i < choicesArray.length; i++) {
+        currentQuestion['choice' + (i + 1)] = choicesArray[i];
+    }
+
+    /* Display the question and shuffled choices */
+    question.innerText = currentQuestion.question;
+    choices.forEach((choice) => {
         const number = choice.dataset['number'];
         choice.innerText = currentQuestion['choice' + number];
     });
     questionsLeft.splice(questionIndex, 1);
     acceptedAnswers = true;
-}
-
+    }
 
 /* */
 choices.forEach(choice => {
