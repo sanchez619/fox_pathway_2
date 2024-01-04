@@ -1,10 +1,11 @@
 /*Global Constants - mainly question text*/
-const question = document.getElementById('question');
+const question = document.getElementsByClassName('question');
 const choices = Array.from(document.getElementsByClassName('choiceContent'));
 const quizLength = 10;
 const questionCountValue = document.getElementById('questionNumber');
 const associationHeader = document.getElementById('association');
 const associationForm = document.getElementById('associationForm');
+const radicalPicture = document.getElementById('radicalImage')
 const questionArea = document.getElementById('questionArea');
 const scoreValue = document.getElementById('score');
 const quizArea = document.getElementById('quizArea');
@@ -131,6 +132,7 @@ function updateQuestionCount() {
 function shuffleArray(array) {
     for (let remainingQuestions = array.length - 1; remainingQuestions > 0; remainingQuestions--) {
         const grabbedQuestions = Math.floor(Math.random() * (remainingQuestions + 1));
-        [array[remainingQuestions], array[grabbedQuestions]] = [array[grabbedQuestions], array[remainingQuestions]]; // Swap elements
+        [array[remainingQuestions], array[grabbedQuestions]] = [array[grabbedQuestions], array[remainingQuestions]]; 
+        /* Swap elements */
     }
 }
