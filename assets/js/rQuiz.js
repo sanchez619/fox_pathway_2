@@ -39,7 +39,7 @@ associationForm.addEventListener('submit', (event) => {
     event.target.reset();
     questionCount++;
     /*changes visible items from form to quiz*/
-    if (questionCount === questions.length) {
+    if (questionCount == quizLength) {
         questionArea.classList.add('hide');
         quizArea.classList.remove('hide');
         questionCount = 0;
@@ -59,11 +59,13 @@ function launchGame() {
 
 function startAssociations() {
     associationHeader.innerText = questions[questionCount].question;
+    radicalPicture.style.backgroundImage = questions[questionCount].picture;
 }
 
 /*function for replacing questions*/
 function exchangeQuestion() {
     if (questionsLeft.length === 0 || questionCount > quizLength) {
+        localStorage.setItem('endScore', score);
         /*automatically connect to result page*/
         return window.location.assign('/result.html');
     }
@@ -122,7 +124,7 @@ choices.forEach(choice => {
 function updateScore() {
     let currentScore = parseInt(document.getElementById("score").innerText);
     document.getElementById("score").innerText = ++currentScore;
-};
+}
 
 function updateQuestionCount() {
     let currentQuestionNumber = parseInt(document.getElementById("questionNumber").innerText);
