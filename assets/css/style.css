@@ -4,6 +4,7 @@
 /*Global styling choices*/
 :root {
     background-color: #D6FFB7;
+    font-family: 'Archivo', sans-serif;
     font-size: 10px; /*changes general pixel height*/
 }
 
@@ -107,6 +108,7 @@ section {
     display: none;
 }
 
+/*Styling of footer*/
 footer {
     height: 6vh;
 }
