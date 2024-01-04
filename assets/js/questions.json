@@ -5,7 +5,7 @@
         "choice2": "cupboard",
         "choice3": "box",
         "choice4": "rock",
-        "picture": ".../images/ni.jpg"
+        "picture": ".../images/radical_images/hi.jpg"
     },
     {
         "question": "What is your association for 'human'?",
@@ -45,11 +45,11 @@
         "choice2": "knee",
         "choice3": "mother",
         "choice4": "star",
-        "picture": "../images/radical_images/samurai.onna"
+        "picture": "../images/radical_images/onna.jpg"
     }
     ,{
         "question": "What is your association for 'eye'?",
-        "choice1": "book",
+        "choice1": "user input",
         "choice2": "cupboard",
         "choice3": "book",
         "choice4": "fence",
