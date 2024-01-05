@@ -5,7 +5,7 @@ const quizLength = 10;
 const questionCountValue = document.getElementById('questionNumber');
 const associationHeader = document.getElementById('association');
 const associationForm = document.getElementById('associationForm');
-const radicalPicture = document.getElementById('radicalImage')
+const radicalPicture = document.getElementById('radicalImage');
 const questionArea = document.getElementById('questionArea');
 const scoreValue = document.getElementById('score');
 const quizArea = document.getElementById('quizArea');
@@ -16,20 +16,23 @@ let acceptedAnswers = false;
 let score = 0;
 let questionCount = 0;
 let questionsLeft = [];
-let questions = []
+let questions = [];
 
 /*fetch function to grab questions from json file */
-fetch('assets/js/questions.json').then((res) =>  {
+
+fetch('assets/js/questions.json')
+    .then((res) => {
         return res.json();
-    }).then((loadedQuestions) => {
+    })
+    .then((loadedQuestions) => {
         questions = loadedQuestions;
-        console.log("loadedQuestions");
+        shuffleArray(questions);
+        questions = questions.slice(0, 10);
         launchGame();
     })
     .catch((err) => {
         console.error(err);
-    })
-
+});
 /*Listener grabs user input and changes it to first answer in question */
 associationForm.addEventListener('submit', (event) => {
     event.preventDefault();
