@@ -68,8 +68,10 @@ function launchGame() {
 }
 
 function startAssociations() {
-    associationHeader.innerText = questions[questionCount].question;
-    radicalPicture.style.backgroundImage = questions[questionCount].picture;
+    for (let item of question) {
+        item.innerText = questions[questionCount].question;
+    }
+    radicalPicture.style.backgroundImage = `url('${questions[questionCount].picture}')`;
 }
 
 /*function for replacing questions*/
