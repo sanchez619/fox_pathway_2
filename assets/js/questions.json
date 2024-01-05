@@ -1,208 +1,236 @@
 [
     {
         "question": "What is your association for 'day'?",
-        "choice1": "user input",
+        "answer": "",
+        "choice1": "",
         "choice2": "cupboard",
         "choice3": "box",
         "choice4": "rock",
-        "picture": ".../images/radical_images/hi.jpg"
+        "picture": "assets/images/radical_images/ni.jpg"
     },
     {
         "question": "What is your association for 'human'?",
-        "choice1": "user input",
+        "answer": "",
+        "choice1": "",
         "choice2": "pyramid",
         "choice3": "cone",
         "choice4": "legs",
-        "picture": "../images/radical_images/hito.jpg"
+        "picture": "assets/images/radical_images/hito.jpg"
     },
     {
         "question": "What is your association for 'tree'?",
-        "choice1": "user input",
+        "answer": "",
+        "choice1": "",
         "choice2": "sail",
         "choice3": "wheat",
         "choice4": "pole",
-        "picture": "../images/radical_images/ki.jpg"
-    }
-    ,{
+        "picture": "assets/images/radical_images/ki.jpg"
+    },
+    {
         "question": "What is your association for 'rice field'?",
-        "choice1": "user input",
+        "answer": "",
+        "choice1": "",
         "choice2": "earth",
         "choice3": "target",
         "choice4": "dice",
-        "picture": "../images/radical_images/ta.jpg"
+        "picture": "assets/images/radical_images/ta.jpg"
     },
     {
         "question": "What is your association for 'samurai'?",
-        "choice1": "user input",
+        "answer": "",
+        "choice1": "",
         "choice2": "cross",
         "choice3": "forest",
         "choice4": "window",
-        "picture": "../images/radical_images/samurai.jpg"
+        "picture": "assets/images/radical_images/samurai.jpg"
     },
     {
         "question": "What is your association for 'woman'?",
-        "choice1": "user input",
+        "answer": "",
+        "choice1": "",
         "choice2": "knee",
         "choice3": "mother",
         "choice4": "star",
-        "picture": "../images/radical_images/onna.jpg"
-    }
-    ,{
+        "picture": "assets/images/radical_images/samurai.onna"
+    },
+    {
         "question": "What is your association for 'eye'?",
-        "choice1": "user input",
+        "answer": "",
+        "choice1": "",
         "choice2": "cupboard",
         "choice3": "book",
         "choice4": "fence",
-        "picture": "../images/radical_images/me.jpg"
+        "picture": "assets/images/radical_images/me.jpg"
     },
     {
         "question": "What is your association for 'crown'",
-        "choice1": "user input",
+        "answer": "",
+        "choice1": "",
         "choice2": "reign",
         "choice3": "heaven",
         "choice4": "god",
-        "picture": "../images/radical_images/shoukanmuri.jpg"
-    }
-    ,{
+        "picture": "assets/images/radical_images/shoukanmuri.jpg"
+    },
+    {
         "question": "What is your association for 'child'?",
-        "choice1": "user input",
+        "answer": "",
+        "choice1": "",
         "choice2": "snake",
         "choice3": "myself",
         "choice4": "like",
-        "picture": "../images/radical_images/ko.jpg"
-    }
-    ,{
+        "picture": "assets/images/radical_images/ko.jpg"
+    },
+    {
         "question": "What is your association for 'power'?",
-        "choice1": "user input",
+        "answer": "",
+        "choice1": "",
         "choice2": "shoe",
         "choice3": "axe",
         "choice4": "man",
-        "picture": "../images/radical_images/chikara.jpg"
-    },{
+        "picture": "assets/images/radical_images/chikara.jpg"
+    },
+    {
         "question": "What is your association for 'fire'?",
-        "choice1": "user input",
+        "answer": "",
+        "choice1": "",
         "choice2": "cupboard",
         "choice3": "box",
         "choice4": "rock",
-        "picture": "../images/radical_images/hi-fire.jpg"
+        "picture": "assets/images/radical_images/hi-fire.jpg"
     },
     {
         "question": "What is your association for 'katana(sword)'?",
-        "choice1": "user input",
+        "answer": "",
+        "choice1": "",
         "choice2": "pin",
         "choice3": "stand",
         "choice4": "needle",
-        "picture": "../images/radical_images/katana.jpg"
+        "picture": "assets/images/radical_images/katana.jpg"
     },
     {
         "question": "What is your association for 'one'?",
-        "choice1": "user input",
+        "answer": "",
+        "choice1": "",
         "choice2": "ground",
         "choice3": "bar",
         "choice4": "horizon",
-        "picture": "../images/radical_images/ichi.jpg"
+        "picture": "assets/images/radical_images/ichi.jpg"
     },
     {
         "question": "What is your association for 'word'?",
-        "choice1": "user input",
+        "answer": "",
+        "choice1": "",
         "choice2": "tower",
         "choice3": "stack",
         "choice4": "face",
-        "picture": "../images/radical_images/gen-word.jpg"
+        "picture": "assets/images/radical_images/gen-word.jpg"
     },
     {
         "question": "What is your association for 'oneself'?",
-        "choice1": "user input",
+        "answer": "",
+        "choice1": "",
         "choice2": "sickle",
         "choice3": "shovel",
         "choice4": "worm",
-        "picture": "../images/radical_images/onore.jpg"
+        "picture": "assets/images/radical_images/onore.jpg"
     },
     {
         "question": "What is your association for 'fur'?",
-        "choice1": "user input",
+        "answer": "",
+        "choice1": "",
         "choice2": "sock",
         "choice3": "leaf",
         "choice4": "fan",
-        "picture": "../images/radical_images/ke.jpg"
+        "picture": "assets/images/radical_images/ke.jpg"
     },
     {
         "question": "What is your association for 'water'?",
-        "choice1": "user input",
+        "answer": "",
+        "choice1": "",
         "choice2": "fountain",
         "choice3": "butterfly",
         "choice4": "mirror",
-        "picture": "../images/radical_images/mizu.jpg"
+        "picture": "assets/images/radical_images/mizu.jpg"
     },
     {
         "question": "What is your association for 'person(alternative)'?",
-        "choice1": "user input",
+        "answer": "",
+        "choice1": "",
         "choice2": "pin",
         "choice3": "stand",
         "choice4": "needle",
-        "picture": "../images/radical_images/ninben.jpg"
+        "picture": "assets/images/radical_images/ninben.jpg"
     },
     {
         "question": "What is your association for 'plate'?",
-        "choice1": "user input",
+        "answer": "",
+        "choice1": "",
         "choice2": "gate",
         "choice3": "wall",
         "choice4": "box",
-        "picture": "../images/radical_images/sara.jpg"
+        "picture": "assets/images/radical_images/sara.jpg"
     },
     {
         "question": "What is your association for '(uncooked) rice'?",
-        "choice1": "user input",
+        "answer": "",
+        "choice1": "",
         "choice2": "dress",
         "choice3": "rice plant",
         "choice4": "tree",
-        "picture": "../images/radical_images/kome.jpg"
-    },{
+        "picture": "assets/images/radical_images/kome.jpg"
+    },
+    {
         "question": "What is your association for 'ten'?",
-        "choice1": "user input",
+        "answer": "",
+        "choice1": "",
         "choice2": "target",
         "choice3": "coordinates",
         "choice4": "middle",
-        "picture": "../images/radical_images/juu.jpg"
+        "picture": "assets/images/radical_images/juu.jpg"
     },
     {
         "question": "What is your association for 'car'?",
-        "choice1": "user input",
+        "answer": "",
+        "choice1": "",
         "choice2": "meter",
         "choice3": "carriage",
         "choice4": "bicycle",
-        "picture": "../images/radical_images/kuruma.jpg"
+        "picture": "assets/images/radical_images/kuruma.jpg"
     },
     {
         "question": "What is your association for 'stone'?",
-        "choice1": "user input",
+        "answer": "",
+        "choice1": "",
         "choice2": "platform",
         "choice3": "anvil",
         "choice4": "lever",
-        "picture": "../images/radical_images/ishi.jpg"
+        "picture": "assets/images/radical_images/ishi.jpg"
     },
     {
         "question": "What is your association for 'thread'?",
-        "choice1": "user input",
+        "answer": "",
+        "choice1": "",
         "choice2": "branch",
         "choice3": "candle",
         "choice4": "umbrella",
-        "picture": "../images/radical_images/ito.jpg"
+        "picture": "assets/images/radical_images/ito.jpg"
     },
     {
         "question": "What is your association for 'two'?",
-        "choice1": "user input",
+        "answer": "",
+        "choice1": "",
         "choice2": "tube",
         "choice3": "table",
         "choice4": "counter",
-        "picture": "../images/radical_images/ni.jpg"
+        "picture": "assets/images/radical_images/ni.jpg"
     },
     {
         "question": "What is your association for 'gold'?",
-        "choice1": "user input",
+        "answer": "",
+        "choice1": "",
         "choice2": "shogi",
         "choice3": "general",
         "choice4": "palace",
-        "picture": "../images/radical_images/kane.jpg"
+        "picture": "assets/images/radical_images/kane.jpg"
     }
 ]
