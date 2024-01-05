@@ -33,23 +33,30 @@ fetch('assets/js/questions.json')
     .catch((err) => {
         console.error(err);
 });
+
 /*Listener grabs user input and changes it to first answer in question */
 associationForm.addEventListener('submit', (event) => {
     event.preventDefault();
+
     const userInput = event.target[0].value.toLowerCase();
     questions[questionCount].choice1 = userInput;
     questions[questionCount].answer = userInput;
+
     event.target.reset();
     questionCount++;
+
     /*changes visible items from form to quiz*/
     if (questionCount == quizLength) {
         questionArea.classList.add('hide');
         quizArea.classList.remove('hide');
         questionCount = 0;
         questionsLeft = [...questions];
+        radicalPicture.style.backgroundImage = `url("${questions[questionCount].picture}")`;
         exchangeQuestion();
         return;
     }
+
+    radicalPicture.style.backgroundImage = `url("${questions[questionCount].picture}")`;
     startAssociations();
 });
 
