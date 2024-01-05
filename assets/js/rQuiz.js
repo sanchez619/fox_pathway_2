@@ -108,25 +108,29 @@ function exchangeQuestion() {
     }
 
 /*Add correct and incorrect classes to user choice */
-choices.forEach(choice => {
+choices.forEach((choice) => {
     /*Event Listener for selected choice*/
-    choice.addEventListener("click", e => {
+    choice.addEventListener('click', (e) => {
         if (!acceptedAnswers) return;
         acceptedAnswers = false;
         let selectedContent = e.target;
-        let selectedAnswer = selectedContent.dataset["number"];
 
-        let applyClass = "incorrect";
+        let selectedAnswer = selectedContent.innerText;
+
+        let applyClass = 'incorrect';
         if (selectedAnswer == currentQuestion.answer) {
-            applyClass = "correct";
+            applyClass = 'correct';
         }
-        if (applyClass === "correct") {
+        if (applyClass === 'correct') {
             updateScore();
         }
+
         selectedContent.parentElement.classList.add(applyClass);
+        selectedContent.classList.add(applyClass);
 
         setTimeout(() => {
             selectedContent.parentElement.classList.remove(applyClass);
+            selectedContent.classList.remove(applyClass);
             exchangeQuestion();
         }, 1000);
         updateQuestionCount();
