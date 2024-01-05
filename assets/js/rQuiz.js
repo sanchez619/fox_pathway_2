@@ -138,13 +138,16 @@ choices.forEach((choice) => {
 });
 
 function updateScore() {
-    let currentScore = parseInt(document.getElementById("score").innerText);
-    document.getElementById("score").innerText = ++currentScore;
+    let currentScore = parseInt(document.getElementById('score').innerText);
+    document.getElementById('score').innerText = ++currentScore;
+    score = currentScore;
 }
 
 function updateQuestionCount() {
-    let currentQuestionNumber = parseInt(document.getElementById("questionNumber").innerText);
-    document.getElementById("questionNumber").innerText = ++currentQuestionNumber;
+    let currentQuestionNumber = parseInt(
+        document.getElementById('questionNumber').innerText
+    );
+    document.getElementById('questionNumber').innerText = ++currentQuestionNumber;
 }
 
 function shuffleArray(array) {
