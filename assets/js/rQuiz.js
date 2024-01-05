@@ -144,9 +144,18 @@ function updateQuestionCount() {
 }
 
 function shuffleArray(array) {
-    for (let remainingQuestions = array.length - 1; remainingQuestions > 0; remainingQuestions--) {
-        const grabbedQuestions = Math.floor(Math.random() * (remainingQuestions + 1));
-        [array[remainingQuestions], array[grabbedQuestions]] = [array[grabbedQuestions], array[remainingQuestions]]; 
+    for (
+        let remainingQuestions = array.length - 1;
+        remainingQuestions > 0;
+        remainingQuestions--
+    ) {
+        const grabbedQuestions = Math.floor(
+            Math.random() * (remainingQuestions + 1)
+        );
+        [array[remainingQuestions], array[grabbedQuestions]] = [
+            array[grabbedQuestions],
+            array[remainingQuestions],
+        ];
         /* Swap elements */
     }
 }
