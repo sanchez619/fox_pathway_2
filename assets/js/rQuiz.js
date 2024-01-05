@@ -76,12 +76,15 @@ function startAssociations() {
 
 /*function for replacing questions*/
 function exchangeQuestion() {
+    questionCount++;
+
     if (questionsLeft.length === 0 || questionCount > quizLength) {
         localStorage.setItem('endScore', score);
         /*automatically connect to result page*/
         return window.location.assign('/result.html');
     }
-    questionCount++;
+    radicalPicture.style.backgroundImage = `url('${questions[questionCount - 1].picture
+        }')`;
     let questionIndex = Math.floor(Math.random() * questionsLeft.length);
     currentQuestion = questionsLeft[questionIndex];
     let choicesArray = [
