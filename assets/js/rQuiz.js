@@ -106,6 +106,7 @@ function exchangeQuestion() {
         const number = choice.dataset['number'];
         choice.innerText = currentQuestion['choice' + number];
     });
+    console.log(question)
     questionsLeft.splice(questionIndex, 1);
     acceptedAnswers = true;
     }
