@@ -69,7 +69,7 @@ function launchGame() {
 
 function startAssociations() {
     for (let item of question) {
-        item.innerText = questions[questionCount].question;
+        item.innerHTML = questions[questionCount].question;
     }
     radicalPicture.style.backgroundImage = `url('${questions[questionCount].picture}')`;
 }
