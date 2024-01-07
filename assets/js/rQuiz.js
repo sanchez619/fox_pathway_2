@@ -81,7 +81,7 @@ function exchangeQuestion() {
     if (questionsLeft.length === 0 || questionCount > quizLength) {
         localStorage.setItem('endScore', score);
         /*automatically connect to result page*/
-        return window.location.assign('/result.html');
+        return window.location.assign('result.html');
     }
     radicalPicture.style.backgroundImage = `url('${questions[questionCount - 1].picture
         }')`;
