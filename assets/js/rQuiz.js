@@ -86,6 +86,7 @@ function exchangeQuestion() {
     radicalPicture.style.backgroundImage = `url('${questions[questionCount - 1].picture
         }')`;
     let questionIndex = Math.floor(Math.random() * questionsLeft.length);
+    question[1].innerText = questions[questionIndex].question;
     currentQuestion = questionsLeft[questionIndex];
     let choicesArray = [
         currentQuestion.choice1,
