@@ -42,7 +42,7 @@
 
 .scoreArea {
     display: flex;
-    justify-items: space-around;
+    align-items: space-around;
 }
 
 /* Classes for (In)Correct Answers */
