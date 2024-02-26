@@ -3,9 +3,9 @@ const welcomeArea = document.getElementById('welcomeArea');
 const nameRequest = document.getElementById('nameRequest');
 
 //Goal: Get name input of user
-let username
+let username;
 
-nameRequest.addEventListener('submit', (event) => {
+nameRequest.addEventListener('submit', function(event) {
     event.preventDefault();
     username = event.target[0].value;
     nameRequest.classList.add('hide');
