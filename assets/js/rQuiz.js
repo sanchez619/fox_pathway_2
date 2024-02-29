@@ -43,12 +43,16 @@ associationForm.addEventListener('submit', function(event) {
 
 
     const userInput = event.target[0].value.toLowerCase();
+    if (userInput !== '') {
     questions[questionCount].choice1 = userInput;
     questions[questionCount].answer = userInput;
 
     event.target.reset();
     questionCount++;
-
+    } else {
+        alert('Input empty. Please add a sufficient association.');
+    }
+    
     /*changes visible items from form to quiz*/
     if (questionCount == quizLength) {
         questionArea.classList.add('hide');
