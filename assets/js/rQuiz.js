@@ -22,6 +22,9 @@ var questions = [];
 
 fetch('assets/js/questions.json')
     .then(function(res) {
+        if (!res.ok) {
+            throw new Error('Network response was not ok');
+        }
         return res.json();
     })
     .then(function(loadedQuestions) {
@@ -31,8 +34,8 @@ fetch('assets/js/questions.json')
         launchGame();
     })
     .catch(function(err) {
-        console.error(err);
-});
+        console.error('Error fetching questions:', err);
+    });
 
 /*Listener grabs user input and changes it to first answer in question */
 associationForm.addEventListener('submit', function(event) {
