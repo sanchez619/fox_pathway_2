@@ -119,43 +119,36 @@ function exchangeQuestion() {
   
 /* Display the question and shuffled choices */
 question.innerText = currentQuestion.question;
-choices.forEach(function(choice) {
-    const number = choice.dataset.number;
-    choice.innerText = currentQuestion['choice' + number];
+choices.forEach(function (choice) {
+  const choiceContent = choice.querySelector('.choiceContent');
+  const number = choiceContent.dataset.number;
+  choiceContent.innerText = currentQuestion['choice' + number];
 });
-console.log(question);
 questionsLeft.splice(questionIndex, 1);
 acceptedAnswers = true;
 
 /*Add correct and incorrect classes to user choice */
-choices.forEach(function(choice) {
-    /* Event Listener for selected choice */
-    choice.addEventListener('click', function(e) {
-        if (!acceptedAnswers) return;
-        acceptedAnswers = false;
-        let selectedContent = e.target;
-
-        let selectedAnswer = selectedContent.innerText;
-
-        let applyClass = 'incorrect';
-        if (selectedAnswer == currentQuestion.answer) {
-            applyClass = 'correct';
-        }
-        if (applyClass === 'correct') {
-            updateScore();
-        }
-
-        selectedContent.parentElement.classList.add(applyClass);
-        selectedContent.classList.add(applyClass);
-
-        setTimeout(function() {
-            selectedContent.parentElement.classList.remove(applyClass);
-            selectedContent.classList.remove(applyClass);
-            exchangeQuestion();
-        }, 1000);
-        updateQuestionCount();
+/*Add correct and incorrect classes to user choice */
+choices.forEach(function (choiceBox) {
+    choiceBox.addEventListener('click', function (e) {
+      if (!acceptedAnswers) return;
+      acceptedAnswers = false;
+      let choiceContent = choiceBox.querySelector('.choiceContent');
+      let selectedAnswer = choiceContent.innerText;
+      let applyClass =
+        selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
+      if (applyClass === 'correct') {
+        updateScore();
+      }
+      choiceBox.classList.add(applyClass);
+      choiceContent.classList.add(applyClass);
+      setTimeout(function () {
+        choiceBox.classList.remove(applyClass);
+        choiceContent.classList.remove(applyClass);
+        exchangeQuestion();
+      }, 1000);
+      updateQuestionCount();
     });
-});
 
 function updateScore() {
     let currentScore = parseInt(document.getElementById('score').innerText);
