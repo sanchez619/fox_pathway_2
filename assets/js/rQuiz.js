@@ -7,13 +7,13 @@ const radicalPicture = document.getElementById('radicalImage');
 const questionArea = document.getElementById('questionArea');
 const quizArea = document.getElementById('quizArea');
 
-/*Global Variables - general quiz features*/
-var currentQuestion = {};
-var acceptedAnswers = false;
-var score = 0;
-var questionCount = 0;
-var questionsLeft = [];
-var questions = [];
+/*Global letiables - general quiz features*/
+let currentQuestion = {};
+let acceptedAnswers = false;
+let score = 0;
+let questionCount = 0;
+let questionsLeft = [];
+let questions = [];
 
 /*fetch function to grab questions from json file */
 
