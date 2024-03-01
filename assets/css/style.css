@@ -121,3 +121,9 @@ footer {
     background-color: #794E16;
     bottom: 0;
 }
+
+
+/*Styling for divisions in about.html */
+.about  {
+    display: inline-block;
+}
