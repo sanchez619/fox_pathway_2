@@ -1,6 +1,6 @@
 /*Global Constants - mainly question text*/
 const question = document.getElementsByClassName('question');
-const choices = Array.from(document.getElementsByClassName('choiceContent'));
+const choices = Array.from(document.getElementsByClassName('choiceBox'));
 const quizLength = 10;
 const associationForm = document.getElementById('associationForm');
 const radicalPicture = document.getElementById('radicalImage');
