@@ -160,13 +160,18 @@ Fix: Due to the interaction between the association form and the radical quiz, t
 Failing to account when to update the question lead to major issues, which I then adapted in a way that would order the questions correctly.
 Unfortunately, there still seems to be an occasional bug where some questions show up multiple times despite the questions choices having changed. While the fixes were an overall improvement, there is still work to be done regarding exchangeQuestion.
 
-### Validators
 
-After testing all sites on the css and html validators, they found a few minor inconsistencies regarding the closing of divisions and incorrect elements for style properties. After fixing these issues, all three webpages pass both validators.
+### Deployment
 
-### Addressing issues in second version
+The original version was posted to Github and written from Codeanywhere
+The updated version was also deployed to Github from Gitpod.
 
+To deploy the updated version, I started a new project.
+I then imported the code in the settings from the starting  settings.
+To deploy the website, I went to the settings and chose "pages".
+There, I picked the main branch from "Deploy from a branch".
 
+The site's hyperlink is: https://sanchez619.github.io/fox_pathway_2/
 
 
 ## Future Improvements
