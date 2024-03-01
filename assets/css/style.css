@@ -86,6 +86,7 @@ section {
 }
 
 #aboutLink  {
+    background-color: #FFFFFF;
     border: 2px solid #19282F;
     width: fit-content;
 }
