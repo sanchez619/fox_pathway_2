@@ -38,7 +38,6 @@ fetch('assets/js/questions.json')
 associationForm.addEventListener('submit', function(event) {
     event.preventDefault();
 
-
     const userInput = event.target[0].value.toLowerCase();
     if (userInput !== '') {
     questions[questionCount].choice1 = userInput;
@@ -74,38 +73,50 @@ function launchGame() {
 
 function startAssociations() {
     for (let i = 0; i < question.length; i++) {
-        question[i].innerHTML = questions[questionCount].question;
+      question[i].innerHTML = questions[questionCount].question;
     }
-    radicalPicture.style.backgroundImage = "url('" + questions[questionCount].picture + "')";
+    radicalPicture.style.backgroundImage =
+      "url('" + questions[questionCount].picture + "')";
 }
-
-/*function for replacing questions*/
+  
+  /*function for replacing questions*/
 function exchangeQuestion() {
     questionCount++;
-
+  
     if (questionsLeft.length === 0 || questionCount > quizLength) {
-        localStorage.setItem('endScore', score);
-        /*automatically connect to result page*/
-        return window.location.assign('result.html');
+      localStorage.setItem('endScore', score);
+      /*automatically connect to result page*/
+      return window.location.assign('result.html');
     }
- radicalPicture.style.backgroundImage = "url('" + questions[questionCount - 1].picture + "')";
+    radicalPicture.style.backgroundImage =
+      "url('" + questions[questionCount - 1].picture + "')";
     let questionIndex = Math.floor(Math.random() * questionsLeft.length);
-    question[1].innerText = questions[questionIndex].question;
     currentQuestion = questionsLeft[questionIndex];
+    question[1].innerText = currentQuestion.question;
     let choicesArray = [
-        currentQuestion.choice1,
-        currentQuestion.choice2,
-        currentQuestion.choice3,
-        currentQuestion.choice4,
+      currentQuestion.choice1,
+      currentQuestion.choice2,
+      currentQuestion.choice3,
+      currentQuestion.choice4,
     ];
     shuffleArray(choicesArray);
-      }
-
-// Assign the shuffled choices back to the currentQuestion object
-for (let i = 0; i < choicesArray.length; i++) {
-    currentQuestion['choice' + (i + 1)] = choicesArray[i];
+  
+    for (let i = 0; i < choicesArray.length; i++) {
+      currentQuestion['choice' + (i + 1)] = choicesArray[i];
+    }
+  
+    /* Display the question and shuffled choices */
+    question.innerText = currentQuestion.question;
+    choices.forEach(function (choice) {
+      const choiceContent = choice.querySelector('.choiceContent');
+      const number = choiceContent.dataset.number;
+      choiceContent.innerText = currentQuestion['choice' + number];
+    });
+  
+    questionsLeft.splice(questionIndex, 1);
+    acceptedAnswers = true;
 }
-
+  
 /* Display the question and shuffled choices */
 question.innerText = currentQuestion.question;
 choices.forEach(function(choice) {
