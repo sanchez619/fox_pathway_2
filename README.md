@@ -160,6 +160,47 @@ Fix: Due to the interaction between the association form and the radical quiz, t
 Failing to account when to update the question lead to major issues, which I then adapted in a way that would order the questions correctly.
 Unfortunately, there still seems to be an occasional bug where some questions show up multiple times despite the questions choices having changed. While the fixes were an overall improvement, there is still work to be done regarding exchangeQuestion.
 
+### Changes to Second Version
+
+#### Removal of unused constants
+
+During planning for the project, I created a lot of possible constants.
+The idea was to create as many factors that could be reused, like scores, inputs etc.
+As a result, a few which turned out to be redundant, were not removed in the first build.
+These are not included in this build.
+
+#### Protection from empty inputs
+
+To prevent empty inputs, a condition was added to the event listeners.
+It checks whether the input is exactly not an empty string.
+The else statement displays an alert questions and prevents the user from continuing.
+
+#### Displaying user input correctly
+
+During the first development issue, a general bug was not found.
+It had to do with the currentQuestion[1].innerText.
+In the original version, it targeted the input in a way that the question at the beginning would get the correct user input, but would display wrong user input at the end, most likely due to the interaction between the arrays.
+By changing the value of currentQuestion[1].innerText, the bug was able to be fixed.
+The program will now always target the input of currentQuestion so that no input can persist even though it is no longer on the questionIndex.
+
+#### Buttons single-choice quiz
+
+The buttons were initially programmed to react on a click on the choiceContent class.
+This choice would prevent the user from clicking anywhere but the text.
+In order to fix this, the constant choices was changed to target the choiceBox class.
+Instead, the event listener was changed so that the choiceContent would still change.
+Now, the player can click anywhere on the answers to choose their option.
+
+#### About Page
+
+On the index.html, an a-element was inserted in the division between the two visible division.
+It links to a new about page, which displays basic info about how the game works.
+Both websites were validated on HTML and CSS.
+
+#### Smaller Fixes
+
+While adjusting the styling for the index.html, I made some smaller fixes, especially with the borders.
+These do not functionally change much, but they improve the display of the website on small devices.
 
 ### Deployment
 
