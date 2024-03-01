@@ -1,14 +1,11 @@
 /*Global Constants - mainly question text*/
-var question = document.getElementsByClassName('question');
-var choices = Array.from(document.getElementsByClassName('choiceContent'));
-var quizLength = 10;
-var questionCountValue = document.getElementById('questionNumber');
-var associationHeader = document.getElementById('association');
-var associationForm = document.getElementById('associationForm');
-var radicalPicture = document.getElementById('radicalImage');
-var questionArea = document.getElementById('questionArea');
-var scoreValue = document.getElementById('score');
-var quizArea = document.getElementById('quizArea');
+const question = document.getElementsByClassName('question');
+const choices = Array.from(document.getElementsByClassName('choiceContent'));
+const quizLength = 10;
+const associationForm = document.getElementById('associationForm');
+const radicalPicture = document.getElementById('radicalImage');
+const questionArea = document.getElementById('questionArea');
+const quizArea = document.getElementById('quizArea');
 
 /*Global Variables - general quiz features*/
 var currentQuestion = {};
