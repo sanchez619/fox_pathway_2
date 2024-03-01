@@ -110,6 +110,28 @@ The result page is kept to a bare minimum. A division displays the final score (
 
 ## Testing
 
+The testing for the original website was done with Google Chrome, Mozilla Firefox and Opera.
+The website was tested for screens between 280px and 1440px.
+The website was tested with HTML, CSS Validators and JSHint.
+
+![Lighthouse Evaluation index.html](assets/images/screenshots/lighthouse_index.jpg)
+
+![Lighthouse Evaluation radical_quiz.html](assets/images/screenshots/lighthouse_rQuiz.jpg)
+
+![Lighthouse Evaluation result.html](assets/images/screenshots/lighthouse_result.jpg)
+
+A quick lighthouse check revealed a few minor issues regarding best practices and responsiveness. The lowest score occurred on the result page, mostly relating to the color and contrast choices. Ultimately, due to the progress on JavaScript code stalling at multiple times during the development, I saw no choice but to keep the webpages as is. However, the color choices are deliberate and would play into a more intricately style design of the website.
+The color palette is as thus:
+
+![8-Color Grid](assets/images/screenshots/8_color_grid.png)
+
+Regarding the JSHint, a misunderstanding popped up when testing.
+At the time, I was unaware that JSHint checks for an older version of JS.
+After finding out this fact, I reinstated all lets and consts that I removed.
+Then, the code for rQuiz.js was cleaned up and validated without issues.
+
+![rQuiz Validation](assets/images/screenshots/jshint_rquiz_validation.jpg)
+
 ### Bugs
 
 #### Targeting #score
@@ -142,18 +164,10 @@ Unfortunately, there still seems to be an occasional bug where some questions sh
 
 After testing all sites on the css and html validators, they found a few minor inconsistencies regarding the closing of divisions and incorrect elements for style properties. After fixing these issues, all three webpages pass both validators.
 
-### Lighthouse checks
+### Addressing issues in second version
 
-![Lighthouse Evaluation index.html](assets/images/screenshots/lighthouse_index.jpg)
 
-![Lighthouse Evaluation radical_quiz.html](assets/images/screenshots/lighthouse_rQuiz.jpg)
 
-![Lighthouse Evaluation result.html](assets/images/screenshots/lighthouse_result.jpg)
-
-A quick lighthouse check revealed a few minor issues regarding best practices and responsiveness. The lowest score occurred on the result page, mostly relating to the color and contrast choices. Ultimately, due to the progress on JavaScript code stalling at multiple times during the development, I saw no choice but to keep the webpages as is. However, the color choices are deliberate and would play into a more intricately style design of the website.
-The color palette is as thus:
-
-![8-Color Grid](assets/images/screenshots/8_color_grid.png)
 
 ## Future Improvements
 
