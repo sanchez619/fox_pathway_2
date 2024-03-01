@@ -130,45 +130,52 @@ acceptedAnswers = true;
 /*Add correct and incorrect classes to user choice */
 /*Add correct and incorrect classes to user choice */
 choices.forEach(function (choiceBox) {
-    choiceBox.addEventListener('click', function (e) {
-      if (!acceptedAnswers) return;
-      acceptedAnswers = false;
-      let choiceContent = choiceBox.querySelector('.choiceContent');
-      let selectedAnswer = choiceContent.innerText;
-      let applyClass =
-        selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
-      if (applyClass === 'correct') {
-        updateScore();
-      }
-      choiceBox.classList.add(applyClass);
-      choiceContent.classList.add(applyClass);
-      setTimeout(function () {
-        choiceBox.classList.remove(applyClass);
-        choiceContent.classList.remove(applyClass);
-        exchangeQuestion();
-      }, 1000);
-      updateQuestionCount();
-    });
+  choiceBox.addEventListener('click', function (e) {
+    if (!acceptedAnswers) return;
+    acceptedAnswers = false;
+    let choiceContent = choiceBox.querySelector('.choiceContent');
+    let selectedAnswer = choiceContent.innerText;
+    let applyClass =
+      selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
+    if (applyClass === 'correct') {
+      updateScore();
+    }
+    choiceBox.classList.add(applyClass);
+    choiceContent.classList.add(applyClass);
+    setTimeout(function () {
+      choiceBox.classList.remove(applyClass);
+      choiceContent.classList.remove(applyClass);
+      exchangeQuestion();
+    }, 1000);
+    updateQuestionCount();
+  });
+});
 
 function updateScore() {
-    let currentScore = parseInt(document.getElementById('score').innerText);
-    document.getElementById('score').innerText = ++currentScore;
-    score = currentScore;
+  let currentScore = parseInt(document.getElementById('score').innerText);
+  document.getElementById('score').innerText = ++currentScore;
+  score = currentScore;
 }
 
 function updateQuestionCount() {
-    let currentQuestionNumber = parseInt(
-        document.getElementById('questionNumber').innerText
-    );
-    document.getElementById('questionNumber').innerText = ++currentQuestionNumber;
+  let currentQuestionNumber = parseInt(
+    document.getElementById('questionNumber').innerText
+  );
+  document.getElementById('questionNumber').innerText = ++currentQuestionNumber;
 }
 
 function shuffleArray(array) {
-    for (let remainingQuestions = array.length - 1; remainingQuestions > 0; remainingQuestions--) {
-        const grabbedQuestions = Math.floor(Math.random() * (remainingQuestions + 1));
-        const temp = array[remainingQuestions];
-        array[remainingQuestions] = array[grabbedQuestions];
-        array[grabbedQuestions] = temp;
-    }
-    // Swap elements
+  for (
+    let remainingQuestions = array.length - 1;
+    remainingQuestions > 0;
+    remainingQuestions--
+  ) {
+    const grabbedQuestions = Math.floor(
+      Math.random() * (remainingQuestions + 1)
+    );
+    const temp = array[remainingQuestions];
+    array[remainingQuestions] = array[grabbedQuestions];
+    array[grabbedQuestions] = temp;
+  }
+  // Swap elements
 }
