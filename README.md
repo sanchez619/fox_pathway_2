@@ -197,6 +197,10 @@ On the index.html, an a-element was inserted in the division between the two vis
 It links to a new about page, which displays basic info about how the game works.
 Both websites were validated on HTML and CSS.
 
+![About html Validation](assets/images/screenshots/html_validation_about.jpg)
+
+![About css Validation](assets/images/screenshots/css_validation_about.jpg)
+
 #### Smaller Fixes
 
 While adjusting the styling for the index.html, I made some smaller fixes, especially with the borders.
